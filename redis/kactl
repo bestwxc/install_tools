@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case $1 in
+	start)
+	service keepalived start
+	;;
+	stop)
+	service keepalived stop
+	;;
+	restart)
+	service keepalived restart
+	;;
+	*)
+	echo "USAGE: kactl [start]|[stop]|[restart]"
+	;;
+esac
